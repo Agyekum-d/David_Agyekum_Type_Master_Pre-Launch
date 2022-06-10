@@ -18,7 +18,7 @@
     grid-area:1/1;
     margin-bottom: 0.5vw;
 }
-
+#P_order:hover{background: #162542; color:#FFFFFF}
 #P_order{
     max-width:30vw ;
     height:6vw ;
@@ -46,10 +46,12 @@ font-size: 3vw;
     height: 100%;
     margin-top: 1vw;
 }   
-      
+  #order:hover{background: #FF9B62;
+            color: #FFFFFF;
+}    
   #order{
     max-width:30vw ;
-    min-height:8vw ;
+    min-height:6vw ;
     background-color:#F16718;
     border-radius: 2vw;
     padding-top: 2vw;
@@ -57,7 +59,6 @@ font-size: 3vw;
     grid-area: 6/1;
   }
   #order1{
-      color: #7B8BAD;
       width:32vw ;
       height:8vw ;
       border-radius: 2vw;
@@ -65,29 +66,40 @@ font-size: 3vw;
       text-align: center;
       grid-area: 6/2;
   }
- 
+  
   .phone{
       display: grid;
-      grid-template-columns: 40vw 60vw;
-      gap: 1vw;
-      width: 100vw;
+      grid-template-columns: 20vw 30vw;
+      gap: 4vw;
+      width: 80vw;
       margin-bottom: 10vw;
       margin-top: 5vw;
+      grid-area:10/1;
   }
   #phone{
       left: -2vw;
-      width: 50vw;
+      width: 40vw;
+      height: 40vw;
+      padding: 0vw 0vw 10vw 0vw;
   }
   #glass{
-      width: 90vw;
-      height: 50vw;
+      width: 80vw;
+      height: 40vw;
       border-radius: 5vw;
   }
   #glass_k{
       border-radius: 4vw;
   }
   .mech{
-      margin: 2vw 1vw 4vw 1vw;
+      margin: 2vw 1vw 4vw 6vw;
+      grid-area:10/4/span 2/span 2;
+  }
+
+
+  .container{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+   column-gap: 5vw;
   }
   .icon{
     background-color:#F16718;
@@ -95,16 +107,14 @@ font-size: 3vw;
     text-align: center;
     width: 12vw;
     padding-top: 1.5vw;
-    margin: 8vw 40vw 4vw 40vw;
   }
-  .words{
+  .words,#trade_mark,#P_order,#order,#order1{
       text-align: center;
       font-family: Barlow-medium, sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 2.5vw;
       color: #7B8BAD;
-
   }
   .icon_words{
     text-align: center;
@@ -121,6 +131,7 @@ font-size: 3vw;
 text-transform: uppercase;
 color: #162542;
 margin: 0.5vw;
+text-align: center;
   }
   h2{
     font-family: Barlow-black, sans-serif;
@@ -129,6 +140,7 @@ margin: 0.5vw;
     font-size: 32px;
     text-transform: uppercase;  
     color: #162542;
+    text-align: center;
   }
   h3{
     font-family: Barlow-black,sans-serif;
@@ -137,6 +149,7 @@ margin: 0.5vw;
     font-size: 24px;
     text-transform: uppercase;
     color: #162542;
+    text-align: center;
  }
  @media  (max-width: 480px) {
   
@@ -150,7 +163,48 @@ margin: 0.5vw;
     #Typemaster1{grid-area: 4/1/span 2/ span 4;}
 #order{grid-area: 6/1/span 1/span 2;}
 #order1{grid-area: 6/4;}
+.icon{ margin: 8vw 40vw 4vw 40vw;}
+.phone{grid-area: 8/1;}
+.mech{grid-area: 9/1/span 2/span 4;}
+.container{
+    display: grid;
+    grid-template-columns: auto;
+}
 }
 
+
+@media (min-width: 481px) and (max-width: 1024px) {    
+#keyboard{
+    grid-area: 2/3/8/4;
+    }
+    #P_order{
+        grid-area:1/4/ span 1/ span 2;
+    }
+    #Type_master{grid-area:2/1/3/2;}
+    #Typemaster1{grid-area: 4/1/5/3;}
+#order{grid-area: 6/1;}
+#order1{grid-area: 6/2;}
+    .phone{ grid-area: 8/1/span 2/span 5;
+    column-gap: 20vw;}
+    .mech{grid-area: 10/1/span 2/span 5;}
+    #glass{width: 120vw;}
+    #phone{width: 70vw;}
+.container{
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: auto auto;
+   column-gap: 5vw;
+   row-gap: 10vw;
+}
+#monitor_icon{grid-area:1/1;
+text-align: left;}
+#bluetooth_icon{grid-area:1/2;
+    text-align: left;}
+#battery_icon{grid-area:2/1;
+    text-align: left;}
+#bulb_icon{grid-area:2/2;
+    text-align: left;}
+    .icon_words{text-align: left}
+  }
 
    
