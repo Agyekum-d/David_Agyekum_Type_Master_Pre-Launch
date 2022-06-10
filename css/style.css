@@ -1,71 +1,78 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap');
+
 .trade_mark{
     display:grid;
-    grid-template-columns: auto auto;
-    gap: 42vw;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows:auto auto auto auto auto;
+    gap: 0.2vw;
     margin-bottom: 10vw;
+    
 }
 #trade_mark{
-    width:10vw ;
-    height:10vw ;
+    max-width:8vw ;
+    min-height:4vw ;
+    max-height: 6vw;
     background-color:#f16718;
     margin-left: 2vw;
+    grid-area:1/1;
+    margin-bottom: 0.5vw;
 }
+
 #P_order{
-    width:30vw ;
-    height:8vw ;
+    max-width:30vw ;
+    height:6vw ;
     background-color:#E8EFF2;
     color: #162542;
     margin-right: 2vw;
     border-radius: 2vw;
     text-align: center;
     padding-top: 2vw;
+    grid-area:1/4/ span 1/ span 2;
+    margin-bottom: 0.5vw;
 }
-.Typemaster{
-    display:grid;
-    width:90vw ;
-    height:80vw ;
-    grid-template-columns: auto auto;
-    margin: 0vw 5vw 10vw 3vw;
-    column-gap: 14vw;
+
+#Type_master { grid-area:2/1/3/2;
+    font-size: 3.25vw;
+    align-items: center;
 }
-#Type_master{
-    grid-column: 1 / span 2;
-    font-size: 7vw;
-  }
-  #Typemaster1{
-    grid-column: 1 / span 2;
-  }
+#Typemaster1 { grid-area: 4/1/5/3;
+text-align: center;
+font-size: 3vw;
+}
+#keyboard { grid-area: 2/3/8/4;
+    width: max-content;
+    margin-left: 6vw;
+    height: 100%;
+    margin-top: 1vw;
+}   
+      
   #order{
-    width:30vw ;
-    height:8vw ;
+    max-width:30vw ;
+    min-height:8vw ;
     background-color:#F16718;
-    border-radius: 1vw;
-    margin-top:5vw;
     border-radius: 2vw;
     padding-top: 2vw;
     text-align: center;
+    grid-area: 6/1;
   }
   #order1{
       color: #7B8BAD;
-      margin-top:5vw;
-      width:30vw ;
+      width:32vw ;
       height:8vw ;
-      border-radius: 1vw;
-      margin-top:5vw;
       border-radius: 2vw;
       padding-top: 2vw;
       text-align: center;
+      grid-area: 6/2;
   }
-  #keyboard,.keyboard{
-      left: 5vw;
-  }
+ 
   .phone{
       display: grid;
       grid-template-columns: 40vw 60vw;
       gap: 1vw;
       width: 100vw;
       margin-bottom: 10vw;
+      margin-top: 5vw;
   }
   #phone{
       left: -2vw;
@@ -75,6 +82,9 @@
       width: 90vw;
       height: 50vw;
       border-radius: 5vw;
+  }
+  #glass_k{
+      border-radius: 4vw;
   }
   .mech{
       margin: 2vw 1vw 4vw 1vw;
@@ -89,9 +99,58 @@
   }
   .words{
       text-align: center;
-      margin: 2vw;
+      font-family: Barlow-medium, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2.5vw;
+      color: #7B8BAD;
+
   }
   .icon_words{
     text-align: center;
     margin: 4vw 2vw 2vw 2vw;
   }
+  #bottom{
+      bottom: 2vw;
+      margin-top: 15vw;
+      text-align: center;
+  }
+  h1{
+    Font:Barlow-black, sans-serif;
+    font-weight: 900;
+text-transform: uppercase;
+color: #162542;
+margin: 0.5vw;
+  }
+  h2{
+    font-family: Barlow-black, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    text-transform: uppercase;  
+    color: #162542;
+  }
+  h3{
+    font-family: Barlow-black,sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #162542;
+ }
+ @media  (max-width: 480px) {
+  
+#keyboard{
+    grid-area: 7/1;
+    }
+    #P_order{
+        grid-area: 1/4/span 1/span 2;
+    }
+    #Type_master{grid-area: 2/1/span 2/span 5;}
+    #Typemaster1{grid-area: 4/1/span 2/ span 4;}
+#order{grid-area: 6/1/span 1/span 2;}
+#order1{grid-area: 6/4;}
+}
+
+
+   
