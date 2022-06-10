@@ -1,1 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap');
+
+.trade_mark{
+    display:grid;
+    grid-template-columns: auto auto;
+    gap: 42vw;
+    margin-bottom: 10vw;
+}
+#trade_mark{
+    width:10vw ;
+    height:10vw ;
+    background-color:#f16718;
+    margin-left: 2vw;
+}
+#P_order{
+    width:30vw ;
+    height:8vw ;
+    background-color:#E8EFF2;
+    color: #162542;
+    margin-right: 2vw;
+    border-radius: 2vw;
+    text-align: center;
+    padding-top: 2vw;
+}
+.Typemaster{
+    display:grid;
+    width:90vw ;
+    height:80vw ;
+    grid-template-columns: auto auto;
+    margin: 0vw 5vw 10vw 3vw;
+    column-gap: 14vw;
+}
+#Type_master{
+    grid-column: 1 / span 2;
+    font-size: 7vw;
+  }
+  #Typemaster1{
+    grid-column: 1 / span 2;
+  }
+  #order{
+    width:30vw ;
+    height:8vw ;
+    background-color:#F16718;
+    border-radius: 1vw;
+    margin-top:5vw;
+    border-radius: 2vw;
+    padding-top: 2vw;
+    text-align: center;
+  }
+  #order1{
+      color: #7B8BAD;
+      margin-top:5vw;
+      width:30vw ;
+      height:8vw ;
+      border-radius: 1vw;
+      margin-top:5vw;
+      border-radius: 2vw;
+      padding-top: 2vw;
+      text-align: center;
+  }
+  #keyboard,.keyboard{
+      left: 5vw;
+  }
+  .phone{
+      display: grid;
+      grid-template-columns: 40vw 60vw;
+      gap: 1vw;
+      width: 100vw;
+      margin-bottom: 10vw;
+  }
+  #phone{
+      left: -2vw;
+      width: 50vw;
+  }
+  #glass{
+      width: 90vw;
+      height: 50vw;
+      border-radius: 5vw;
+  }
+  .mech{
+      margin: 2vw 1vw 4vw 1vw;
+  }
+  .icon{
+    background-color:#F16718;
+    border-radius: 1vw;   
+    text-align: center;
+    width: 12vw;
+    padding-top: 1.5vw;
+    margin: 8vw 40vw 4vw 40vw;
+  }
+  .words{
+      text-align: center;
+      margin: 2vw;
+  }
+  .icon_words{
+    text-align: center;
+    margin: 4vw 2vw 2vw 2vw;
+  }
