@@ -6,8 +6,7 @@
     grid-template-columns: 20vw 20vw 20vw 20vw;
     grid-template-rows:auto auto auto auto auto;
     gap: 0.2vw;
-    margin-bottom: 10vw;
-    
+    margin-bottom: 10vw;  
 }
 #trade_mark{
     max-width:8vw ;
